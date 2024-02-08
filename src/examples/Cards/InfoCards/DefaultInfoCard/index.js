@@ -1,19 +1,7 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
+import React from "react";
 
 // prop-types is a library for typechecking of props
+
 import PropTypes from "prop-types";
 
 // @mui material components
@@ -23,9 +11,15 @@ import Icon from "@mui/material/Icon";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
+import { useTheme } from "@emotion/react";
+
 function DefaultInfoCard({ color, icon, title, description, direction, small }) {
+  const theme = useTheme();
+  const hexaColor = theme.palette.primary.focus;
+  console.log(theme.palette.primary.focus);
   return (
     <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
+      {" "}
       {typeof icon === "string" ? (
         <MKTypography
           display="block"
@@ -33,11 +27,19 @@ function DefaultInfoCard({ color, icon, title, description, direction, small }) 
           color={color}
           textGradient
         >
-          {" "}
-          <Icon>{icon}</Icon>{" "}
+          <Icon>{icon}</Icon>
         </MKTypography>
       ) : (
-        icon
+        <MKTypography
+          display="block"
+          variant={direction === "center" ? "h2" : "h3"}
+          color={color}
+          textGradient
+        >
+          {React.cloneElement(icon, {
+            style: { color: hexaColor },
+          })}
+        </MKTypography>
       )}
       <MKTypography
         display="block"
@@ -63,7 +65,8 @@ function DefaultInfoCard({ color, icon, title, description, direction, small }) 
 
 // Setting default props for the DefaultInfoCard
 DefaultInfoCard.defaultProps = {
-  color: "info",
+  color: "primary",
+
   direction: "left",
   small: false,
 };

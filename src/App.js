@@ -6,9 +6,9 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
 import theme from "assets/theme";
-import Presentation from "layouts/pages/presentation";
 
 import routes from "routes";
+import Home from "pages/Home";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -37,8 +37,8 @@ export default function App() {
       <CssBaseline />
       <Routes>
         {getRoutes(routes)}
-        <Route path="/presentation" element={<Presentation />} />
-        <Route path="*" element={<Navigate to="/presentation" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>
     </ThemeProvider>
   );

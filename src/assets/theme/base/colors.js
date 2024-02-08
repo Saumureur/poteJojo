@@ -45,13 +45,13 @@ export default {
   },
 
   primary: {
-    main: "#e91e63",
-    focus: "#e91e63",
+    main: "#ff0059",
+    focus: "#f50057",
   },
 
   secondary: {
-    main: "#7b809a",
-    focus: "#8f93a9",
+    main: "#2c2f3d",
+    focus: "#6a6e7f",
   },
 
   info: {
@@ -98,19 +98,23 @@ export default {
 
   gradients: {
     primary: {
-      main: "#EC407A",
+      main: "#d3195d",
       state: "#D81B60",
     },
 
     secondary: {
-      main: "#747b8a",
+      main: "#1d2029",
       state: "#495361",
     },
 
     info: {
-      main: "#49a3f1",
-      state: "#1A73E8",
+      main: "#d3195d",
+      state: "#D81B60",
     },
+    // info: {
+    //   main: "#49a3f1",
+    //   state: "#1A73E8",
+    // },
 
     success: {
       main: "#66BB6A",
@@ -243,8 +247,8 @@ export default {
   },
 
   coloredShadows: {
-    primary: "#e91e62",
-    secondary: "#110e0e",
+    primary: "#1e1e1e",
+    secondary: "#2c2f3d",
     info: "#00bbd4",
     success: "#4caf4f",
     warning: "#ff9900",
