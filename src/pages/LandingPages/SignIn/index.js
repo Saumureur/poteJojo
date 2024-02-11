@@ -30,14 +30,14 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
+import MKBox from "components/MK/MKBox";
+import MKTypography from "components/MK/MKTypography";
+import MKInput from "components/MK/MKInput";
+import MKButton from "components/MK/MKButton";
 
 // Material Kit 2 React example components
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import SimpleFooter from "examples/Footers/SimpleFooter";
+import DefaultNavbar from "components/Navbars/DefaultNavbar";
+import SimpleFooter from "components/Footers/SimpleFooter";
 
 // Material Kit 2 React page layout routes
 import routes from "routes";

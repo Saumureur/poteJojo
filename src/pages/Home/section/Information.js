@@ -3,13 +3,13 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
+import MKBox from "components/MK/MKBox";
 
 // Material Kit 2 React examples
-import RotatingCard from "examples/Cards/RotatingCard";
-import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
-import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
-import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
+import RotatingCard from "components/Cards/RotatingCard";
+import RotatingCardFront from "components/Cards/RotatingCard/RotatingCardFront";
+import RotatingCardBack from "components/Cards/RotatingCard/RotatingCardBack";
+import DefaultInfoCard from "components/Cards/InfoCards/DefaultInfoCard";
 
 // Images
 import bgFront from "assets/images/bier.jpg";
@@ -27,7 +27,7 @@ function Information() {
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto", height: "100%" }}>
-            <RotatingCard sx={{ mx: "auto", height: "100%" }}>
+            <RotatingCard sx={{ mx: "auto", height: "100%" }} action={null}>
               <RotatingCardFront
                 icon={<SportsBarIcon />}
                 image={bgFront}
@@ -39,7 +39,7 @@ function Information() {
                     <br />
                   </>
                 }
-                sx={{ mx: "auto", height: "100%" }}
+                sx={{ mx: "auto", height: "100%", width: "100%" }}
               />
               <RotatingCardBack
                 image={bgBack}

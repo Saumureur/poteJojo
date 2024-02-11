@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
+import MKBox from "components/MK/MKBox";
 
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";

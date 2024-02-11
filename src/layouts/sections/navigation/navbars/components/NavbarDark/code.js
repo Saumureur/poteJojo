@@ -1,8 +1,8 @@
 const navbarDarkCode = `// Material Kit 2 React components
-import MKBox from "components/MKBox";
+import MKBox from "components/MK/MKBox";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+import DefaultNavbar from "components/Navbars/DefaultNavbar";
 
 // Routes
 import routes from "routes";

@@ -3,10 +3,10 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
+import MKBox from "components/MK/MKBox";
 
 // Material Kit 2 React examples
-import Breadcrumbs from "examples/Breadcrumbs";
+import Breadcrumbs from "components/Breadcrumbs";
 
 function BreadcrumbsEL() {
   return (

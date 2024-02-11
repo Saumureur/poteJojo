@@ -44,7 +44,6 @@ import AirlineSeatIndividualSuiteIcon from "@mui/icons-material/AirlineSeatIndiv
 import HomeIcon from "@mui/icons-material/Home";
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 
 import SignIn from "layouts/pages/authentication/sign-in";
@@ -52,6 +51,7 @@ import SignIn from "layouts/pages/authentication/sign-in";
 // Sections
 
 import Home from "pages/Home";
+import Book from "pages/Book";
 
 const routes = [
   {
@@ -65,15 +65,19 @@ const routes = [
     icon: <AirlineSeatIndividualSuiteIcon />,
     columns: 1,
     rowsPerColumn: 2,
+    route: "/Book",
+    component: <Book />,
     collapse: [
       {
         icon: <HomeIcon />,
         name: "Chambre",
+        route: "/Book",
+        component: <Book />,
         collapse: [
           {
             name: "1ᵉʳ étage",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
+            route: "/Book",
+            component: <Book />,
           },
           {
             name: "2ᵉᵐᵉ étage",

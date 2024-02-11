@@ -1,5 +1,5 @@
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import DefaultNavbar from "components/Navbars/DefaultNavbar";
+import DefaultFooter from "components/Footers/DefaultFooter";
 
 import routes from "routes";
 import footerRoutes from "footer.routes";
@@ -8,14 +8,15 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import { Card } from "@mui/material";
 
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import MKBox from "components/MK/MKBox";
+import MKTypography from "components/MK/MKTypography";
 
 import Counters from "./section/Counters";
 
 import bgImage from "assets/images/castle.jpg";
 import Information from "pages/Home/section/Information";
 import Team from "./section/Team";
+import Map from "./section/Map";
 
 function Home() {
   return (
@@ -79,6 +80,7 @@ function Home() {
         <Counters />
         <Information />
         <Team />
+        <Map />
       </Card>
       <MKBox pt={3} px={1} mt={3}>
         <DefaultFooter content={footerRoutes} />

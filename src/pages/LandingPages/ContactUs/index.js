@@ -17,14 +17,14 @@ Coded by www.creative-tim.com
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+import MKBox from "components/MK/MKBox";
+import MKInput from "components/MK/MKInput";
+import MKButton from "components/MK/MKButton";
+import MKTypography from "components/MK/MKTypography";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import DefaultNavbar from "components/Navbars/DefaultNavbar";
+import DefaultFooter from "components/Footers/DefaultFooter";
 
 // Routes
 import routes from "routes";

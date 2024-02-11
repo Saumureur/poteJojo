@@ -2,9 +2,9 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 
-import MKBox from "components/MKBox";
+import MKBox from "components/MK/MKBox";
 
-import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
+import DefaultCounterCard from "components/Cards/CounterCards/DefaultCounterCard";
 
 function Counters() {
   return (

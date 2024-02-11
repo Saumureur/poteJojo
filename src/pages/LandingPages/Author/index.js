@@ -17,10 +17,10 @@ Coded by www.creative-tim.com
 import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
+import MKBox from "components/MK/MKBox";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+import DefaultNavbar from "components/Navbars/DefaultNavbar";
 
 // Author page sections
 import Profile from "pages/LandingPages/Author/sections/Profile";

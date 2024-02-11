@@ -18,13 +18,13 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+import MKBox from "components/MK/MKBox";
+import MKInput from "components/MK/MKInput";
+import MKButton from "components/MK/MKButton";
+import MKTypography from "components/MK/MKTypography";
 
 // Images
-import bgImage from "assets/images/examples/blog2.jpg";
+import bgImage from "assets/images/components/blog2.jpg";
 
 function Contact() {
   return (

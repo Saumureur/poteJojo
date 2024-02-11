@@ -19,8 +19,8 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKProgress from "components/MKProgress";
+import MKBox from "components/MK/MKBox";
+import MKProgress from "components/MK/MKProgress";
 
 function ProgressSimple() {
   return (

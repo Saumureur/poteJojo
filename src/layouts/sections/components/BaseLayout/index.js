@@ -21,13 +21,13 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import MKBox from "components/MK/MKBox";
+import MKTypography from "components/MK/MKTypography";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import CenteredFooter from "examples/Footers/CenteredFooter";
-import Breadcrumbs from "examples/Breadcrumbs";
+import DefaultNavbar from "components/Navbars/DefaultNavbar";
+import CenteredFooter from "components/Footers/CenteredFooter";
+import Breadcrumbs from "components/Breadcrumbs";
 
 // Routes
 import routes from "routes";

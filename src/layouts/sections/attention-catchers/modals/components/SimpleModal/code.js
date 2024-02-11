@@ -11,9 +11,9 @@ import Slide from "@mui/material/Slide";
 import CloseIcon from "@mui/icons-material/Close";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+import MKBox from "components/MK/MKBox";
+import MKButton from "components/MK/MKButton";
+import MKTypography from "components/MK/MKTypography";
 
 function SimpleModal() {
   const [show, setShow] = useState(false);
